@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey form</title>
+</head>
+<body>
+   <div><h1  id="title">freeCodeCamp Survey Form</h1></div> 
+   <div><p  id="description">Fill in the below details</p></div>
+   <form id="survey-form" >
+       <label for="name" id="name-label">Name</label><br>
+       <input type="text" id="name" placeholder="Enter your name" required><br>
+       <label for="email" id="email-label" >Email</label><br>
+      <input type="email" id="email" placeholder="Enter your email" required><br>
+      <label for="number" id="number-label">Age</label><br>
+      <input type="number" id="number" placeholder="Enter your age" min="10" max="99" ><br>
+     <label>Current Role?</label><br>
+     <select id="dropdown"  required>
+         <option value="" disabled selected>mention your current role</option>
+         <option value="Student">Student</option>
+         <option value="Full time job">Full time job </option>
+         <option value="Full time learner">Full time learner</option>
+         <option value="Prefer not to say">Prefer not to say</option>
+         <option value="Others">Others</option>
+     </select><br>
+     <label >Would you recommend free code camp to a friend?</label><br>
+    <input type="radio" name="btn" id="definitely" value="def" > Definitely <br>
+    <input type="radio" name="btn" id="maybe" value="may"> Maybe<br>
+    <input type="radio" name="btn" id="notsure" value="not"> Not sure<br>
+     <label>What would you like to get improved in?</label><br>
+    <input type="checkbox" value="front-end" id="c1"> Front-end Projects<br>
+    <input type="checkbox" value="back-end" id="c2"> Back-end Projects<br>
+    <input type="checkbox" value="Data Visualization" id="c3"> Data Visualization<br>
+    <input type="checkbox" value="challenges" id="c4"> Challenges<br>
+   <input type="checkbox" value="forum" id="c5"> Forum<br>
+     <input type="checkbox" value="open source community" id="c6"> Open source community<br>
+    <input type="checkbox" value="wiki" id="c7"> Wiki<br>
+     <label >Any comments or suggestions?</label><br>
+     <textarea name="comments" id="area" placeholder="Enter your comments or suggestions here" cols="70" rows="10"></textarea><br>
+     <div id="submit">
+     <button type="submit" id="btn">submit</button>
+
+     </div>
+       
+    </form>
+
+
+</body>
+</html>
